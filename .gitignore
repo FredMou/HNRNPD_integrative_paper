@@ -1,0 +1,45 @@
+# Private local settings and credentials
+.env
+.env.*
+!.env.example
+config/paths.local.*
+
+# Sequencing data and large alignment intermediates
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.bai
+*.sam
+*.cram
+*.crai
+*.pod5
+*.fast5
+
+# Generated outputs and temporary work
+/results/
+/output/
+/outputs/
+/tmp/
+/temp/
+*.tmp
+*.log
+
+# R session and local dependency cache
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+renv/staging/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editor/OS artefacts
+.DS_Store
+Thumbs.db
+*~
